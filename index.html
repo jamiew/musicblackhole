@@ -4,38 +4,60 @@
   <meta charset="utf-8">
   <title>Music Blackhole - The original passive music backup service</title>
   <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; background: #0a0a0a; color: #ccc; }
-    h1 { margin-bottom: 0.2em; color: #fff; }
-    .subtitle { color: #666; margin-bottom: 1em; }
-    .stats { color: #888; font-size: 0.9em; margin-bottom: 2em; }
-    a { color: #5555aa; }
-    a:hover { color: #7777cc; }
-    .note { background: #111; padding: 1em; border-left: 3px solid #cc6666; margin: 1em 0; color: #999; }
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+      background: #0a0a0a url('blackhole.jpg') no-repeat center top;
+      background-size: 100% auto;
+      color: #ccc;
+    }
+    .hero {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+    }
+    h1 { margin-bottom: 0.2em; color: #fff; font-size: 2.5em; }
+    .subtitle { color: #aaa; margin-bottom: 0.5em; }
+    .stats { color: #ff9944; font-size: 0.9em; }
+    .content { background: rgba(10,10,10,0.95); padding: 2em; margin-top: 1em; border-radius: 4px; }
+    a { color: #ff9944; }
+    a:hover { color: #ffbb66; }
+    .note { background: #111; padding: 1em; border-left: 3px solid #ff6633; margin: 1em 0; color: #999; }
     blockquote { border-left: 3px solid #444; padding-left: 1em; margin-left: 0; color: #888; font-style: italic; }
   </style>
 </head>
 <body>
-  <h1>MUSIC BLACKHOLE</h1>
-  <p class="subtitle">The original passive music backup service</p>
-  <p class="stats">Stored <strong>79</strong> music collections totaling <strong>2,516 GB</strong></p>
-
-  <div class="note">
-    <strong>2008/Sep/19:</strong> Uncrackable upgrades to Apple's DAAP encryption scheme sidelined this project.
-    The Blackhole is no longer operational.
+  <div class="hero">
+    <h1>MUSIC BLACKHOLE</h1>
+    <p class="subtitle">The original passive music backup service</p>
+    <p class="stats">Stored <strong>79</strong> music collections totaling <strong>2,516 GB</strong></p>
   </div>
 
-  <h2>What it was</h2>
-  <p>Music Blackhole was a peer-to-peer music sharing and backup network. Users would connect using a custom app called "wormhole.app" and share their iTunes libraries over DAAP (Digital Audio Access Protocol).</p>
+  <div class="content">
+    <div class="note">
+      <strong>2008/Sep/19:</strong> Uncrackable upgrades to Apple's DAAP encryption scheme sidelined this project.
+      The Blackhole is no longer operational.
+    </div>
 
-  <blockquote>Connect &amp; share your music library. Stream anywhere.</blockquote>
+    <h2>What it was</h2>
+    <p>Music Blackhole was a peer-to-peer music sharing and backup network. Users would connect using a custom app called "wormhole.app" and share their iTunes libraries over DAAP (Digital Audio Access Protocol).</p>
 
-  <p>The service also featured "Radiation Radio" - a streaming radio station that would randomly play tracks from connected libraries.</p>
+    <blockquote>Connect &amp; share your music library. Stream anywhere.</blockquote>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://github.com/jamiew/musicblackhole">Source code on GitHub</a></li>
-  </ul>
+    <p>The service also featured "Radiation Radio" - a streaming radio station that would randomly play tracks from connected libraries.</p>
 
-  <p>Made by <a href="http://jamiedubs.com">Jamie Wilkinson</a></p>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/jamiew/musicblackhole">Source code on GitHub</a></li>
+    </ul>
+
+    <p>Made by <a href="http://jamiedubs.com">Jamie Wilkinson</a></p>
+  </div>
 </body>
 </html>
